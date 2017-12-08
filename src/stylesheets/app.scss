@@ -1,0 +1,13 @@
+// Variables
+$cellSize: 40px;
+$default-padding: 15px;
+
+// Icons
+$icomoon-font-path: "../static/fonts" !default;
+@import "icons/variables";
+@import "icons/style";
+
+// Styles
+@import "reset";
+@import "base";
+@import "board";

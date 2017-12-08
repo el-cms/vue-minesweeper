@@ -1,0 +1,38 @@
+// Base
+body {
+  font-family: sans-serif;
+  padding: $default-padding;
+  background-color: black;
+  color: #EEE;
+}
+
+input {
+  background: transparent;
+  color: inherit;
+  width: 50px;
+  line-height: 1em;
+  border: 0;
+  border-bottom: 3px solid #AAA;
+  &:focus {
+    border-bottom: 3px solid #EEE;
+  }
+  &[type=number]::-webkit-outer-spin-button,
+  &[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, .8)
+}
+
+input, button {
+  padding: $default-padding/2
+}
