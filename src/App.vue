@@ -304,6 +304,9 @@
           //visible: this.running && (this.lost || this.won),
           exploded: cell.exploded
         }
+        if(cell.revealed && cell.bombsAround > 0){
+          classes[`has-${cell.bombsAround}-bombs-around`] = true
+        }
         classes[debugString] = this.debug
         return classes
       },

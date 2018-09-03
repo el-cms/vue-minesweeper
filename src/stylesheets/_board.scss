@@ -48,7 +48,19 @@
         }
       }
       &.nobomb {
-        background-color: mix(green, black, 70%);
+        background-color: mix(silver, black, 70%);
+        font-weight: bold;
+        font-size: 1.2em;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+
+        &.has-1-bombs-around{ color: #ffd000 }
+        &.has-2-bombs-around{ color: #c75b04 }
+        &.has-3-bombs-around{ color: #38bd0f }
+        &.has-4-bombs-around{ color: #00b4fb }
+        &.has-5-bombs-around{ color: #7b080f }
+        &.has-6-bombs-around{ color: #fe0229 }
+        &.has-7-bombs-around{ color: #39625f }
+        &.has-8-bombs-around{ color: #888888 }
       }
       &.exploded, &.bomb {
         background-color: red;
