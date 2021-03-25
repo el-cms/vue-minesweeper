@@ -1,0 +1,80 @@
+root: true
+reportUnusedDisableDirectives: true
+extends:
+  - '@vue/standard'
+  - 'plugin:vue/recommended'
+env:
+  node: true
+rules:
+  no-debugger: error
+  no-console: error
+  comma-dangle:
+    - error
+    - arrays: always-multiline
+      objects: always-multiline
+      imports: always-multiline
+      exports: always-multiline
+      functions: ignore
+  no-unused-vars:
+    - error
+    - vars: local
+  object-property-newline:
+    - error
+    - allowAllPropertiesOnSameLine: true
+  prefer-promise-reject-errors: 0
+  vue/max-attributes-per-line:
+    - error
+    - singleline: 4
+      multiline:
+        max: 1
+        allowFirstLine: true
+  vue/order-in-components:
+    - error
+    - order:
+        - el
+        - name
+        - parent
+        - functional
+        - - delimiters
+          - comments
+        - - components
+          - directives
+        - extends
+        - mixins
+        - inheritAttrs
+        - model
+        - - props
+          - propsData
+        - data
+        - computed
+        - methods
+        - LIFECYCLE_HOOKS
+        - - template
+          - render
+        - renderError
+        - watch
+        - filters
+  vue/html-closing-bracket-newline:
+    - error
+    - singleline: never
+      multiline: never
+  vue/singleline-html-element-content-newline:
+    - error
+    - ignoreWhenNoAttributes: true
+      ignoreWhenEmpty: true
+      ignores:
+        - pre
+        - textarea
+        - label
+        - span
+        - button
+        - a
+        - router-link
+        - slot
+        - h1
+        - h2
+        - h3
+        - h4
+        - h5
+        - h6
+        - template
